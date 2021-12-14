@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="src/script.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="shortcut icon" href="img/.png" type="image/x-icon">
+        
+        <title>Cronômetro</title>
+    </head>
+
+    <body>
+        
+        <div class="cron-container">
+            <span id="cron-hours"  >00</span> :
+            <span id="cron-minutes">00</span> :
+            <span id="cron-seconds">00</span>
+        </div>
+
+        <div class="cron-buttons">
+            <button onclick="CronStart()" class="btn-start">START</button>
+            <button onclick="CronPause()" class="btn-pause">PAUSE</button>
+            <button onclick="CronReset()" class="btn-reset">RESET</button>
+        </div>
+
+    </body>
+</html>
