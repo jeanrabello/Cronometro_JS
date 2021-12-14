@@ -12,18 +12,18 @@
     </head>
 
     <body>
-        
-        <div class="cron-container">
-            <span id="cron-hours"  >00</span> :
-            <span id="cron-minutes">00</span> :
-            <span id="cron-seconds">00</span>
+        <div class="chronometer">
+            <div class="chron-counter">
+                <span id="chron-hours"  >00</span> :
+                <span id="chron-minutes">00</span> :
+                <span id="chron-seconds">00</span>
+            </div>
+    
+            <div class="chron-buttons">
+                <button onclick="ChronStart()" class="btn-start">START</button>
+                <button onclick="ChronPause()" class="btn-pause">PAUSE</button>
+                <button onclick="ChronReset()" class="btn-reset">RESET</button>
+            </div>
         </div>
-
-        <div class="cron-buttons">
-            <button onclick="CronStart()" class="btn-start">START</button>
-            <button onclick="CronPause()" class="btn-pause">PAUSE</button>
-            <button onclick="CronReset()" class="btn-reset">RESET</button>
-        </div>
-
     </body>
 </html>
