@@ -4,6 +4,10 @@ var h = 0, m = 0, s = 0;
 function ChronStart() {
     console.log("Iniciando cronômetro");
 
+    document.getElementsByClassName("btn-start")[0].style.display = 'none';
+    document.getElementsByClassName("btn-pause")[0].style.display = 'inline';
+    document.getElementsByClassName("btn-reset")[0].style.display = 'inline';
+
     var hours = document.getElementById("chron-hours");
     var minutes = document.getElementById("chron-minutes");
     var seconds = document.getElementById("chron-seconds");
@@ -36,11 +40,20 @@ function ChronStart() {
 
 function ChronPause() {
     console.log("Pausando cronômetro");
+
+    document.getElementsByClassName("btn-start")[0].style.display = 'inline';
+    document.getElementsByClassName("btn-pause")[0].style.display = 'none';
+
     clearInterval(chronometer);
 }
 
 function ChronReset() {
     console.log("Resetando cronômetro");
+
+    document.getElementsByClassName("btn-start")[0].style.display = 'inline';
+    document.getElementsByClassName("btn-pause")[0].style.display = 'none';
+    document.getElementsByClassName("btn-reset")[0].style.display = 'none';
+
     clearInterval(chronometer);
 
     h = 0; 

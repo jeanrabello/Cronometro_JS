@@ -43,6 +43,14 @@ body {
     border-radius: 5px;
 }
 
+.chron-buttons .btn-pause {
+    display: none;
+}
+
+.chron-buttons .btn-reset {
+    display: none;
+}
+
 .chron-buttons button:hover {
     background-color: black;
     color: white;
