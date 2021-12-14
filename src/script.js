@@ -38,3 +38,16 @@ function ChronPause() {
     console.log("Pausando cronômetro");
     clearInterval(chronometer);
 }
+
+function ChronReset() {
+    console.log("Resetando cronômetro");
+    clearInterval(chronometer);
+
+    h = 0; 
+    m = 0; 
+    s = 0;
+    
+    document.getElementById("chron-hours").innerText = "00";
+    document.getElementById("chron-minutes").innerText = "00";
+    document.getElementById("chron-seconds").innerText = "00";
+}
